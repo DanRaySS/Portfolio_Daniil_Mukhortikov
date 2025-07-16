@@ -1,0 +1,19 @@
+.Navigation {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        margin-right: 71px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: var(--white-primary);
+    }
+}

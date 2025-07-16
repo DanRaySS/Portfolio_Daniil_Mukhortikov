@@ -1,0 +1,17 @@
+.Header {
+    width: 100%;
+    background-color: var(--black-secondary);
+    
+    &__container {
+        max-width: 810px;
+        height: 82px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: auto;
+    }
+}

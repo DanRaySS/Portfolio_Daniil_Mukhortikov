@@ -5,6 +5,6 @@ import './styles/index.scss';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <MainPage className='content-page'/>
+    <MainPage className='content-page' />
   </StrictMode>,
-)
+);
