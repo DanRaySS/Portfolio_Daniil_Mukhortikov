@@ -8,6 +8,10 @@
     &__item {
         margin-right: 71px;
 
+        &:first-child {
+            margin-left: 70px;
+        }
+
         &:last-child {
             margin-right: 0;
         }

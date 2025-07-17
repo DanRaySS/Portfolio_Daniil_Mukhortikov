@@ -1,0 +1,21 @@
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: var(--font-semiBold);
+    max-width: 250px;
+    height: 64px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 16px 30px;
+}
+
+.outline {
+    color: white;
+    background-color: transparent;
+    outline: 1px solid white;
+}
+
+.fill {
+    background-color: white;
+}

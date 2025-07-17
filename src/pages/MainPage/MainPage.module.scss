@@ -9,3 +9,21 @@
 .Avatar {
     margin-bottom: 41px;
 }
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // margin-right: auto;
+    // margin-left: auto;
+    max-width: 700px;
+}
+
+.Title {
+    margin-bottom: 40px;
+}
+
+.SubTitle {
+    margin-bottom: 50px;
+}

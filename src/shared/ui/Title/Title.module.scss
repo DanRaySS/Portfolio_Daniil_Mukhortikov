@@ -1,0 +1,14 @@
+.Title {
+    font: var(--font-extra);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: var(--orange-purple-gradient-1);
+    
+    &::first-line {
+        color: transparent;
+    }
+    
+    &__specialization {
+        color: transparent;
+    }
+}
