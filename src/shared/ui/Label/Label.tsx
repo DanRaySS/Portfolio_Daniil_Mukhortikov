@@ -1,22 +1,22 @@
 import classNames from "classnames";
 import { EFontSize } from "shared/types/types";
-import cls from "./SubTitle.module.scss";
+import cls from "./Label.module.scss";
 
-interface ISubTitleProps {
+interface ILabelProps {
   className?: string;
   children: React.ReactNode;
   fontSize?: EFontSize;
 }
 
-export const SubTitle = ({ className, children, fontSize }: ISubTitleProps) => {
+export const Label = ({ className, children, fontSize }: ILabelProps) => {
 
   if (!fontSize) {
     fontSize = EFontSize.MAIN;
   }
 
   return (
-    <h2 className={classNames(cls.SubTitle, cls[fontSize], [className])}>
+    <h3 className={classNames(cls.Label, cls[fontSize], [className])}>
       {children}
-    </h2>
+    </h3>
   );
 };

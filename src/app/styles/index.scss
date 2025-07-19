@@ -2,7 +2,7 @@
 @use "variables/global.scss" as *;
 
 body {
-  font: var(--font-main);
+  font: var(--font-light);
   color: var(--white-primary);
 
   &::-webkit-scrollbar {

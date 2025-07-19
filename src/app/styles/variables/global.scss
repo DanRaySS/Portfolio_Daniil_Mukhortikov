@@ -21,16 +21,22 @@
     --font-light: var(--font-weight-light) var(--font-size-light) / var(--font-line-light) var(--font-family-main);
 
     // Размер шрифта L
-    --font-size-l: 24px;
-    --font-line-l: 32px;
-    --font-weight-l: 600;
+    --font-size-l: 35px;
+    --font-line-l: 35px;
+    --font-weight-l: 800;
     --font-l: var(--font-weight-l) var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
-    // Размер шрифта Main
-    --font-size-main: 14px;
-    --font-line-main: 20px;
-    --font-weight-main: 500;
-    --font-main: var(--font-weight-main) var(--font-size-main) / var(--font-line-main) var(--font-family-main);
+    // Размер шрифта Label
+    --font-size-label: 19px;
+    --font-line-label: 20px;
+    --font-weight-label: 800;
+    --font-label: var(--font-weight-label) var(--font-size-label) / var(--font-line-label) var(--font-family-main);
+
+    // Размер шрифта Small
+    --font-size-small: 10px;
+    --font-line-small: 20px;
+    --font-weight-small: 800;
+    --font-small: var(--font-weight-small) var(--font-size-small) / var(--font-line-small) var(--font-family-main);
 
     // Цвет
     --white-primary: #fff;

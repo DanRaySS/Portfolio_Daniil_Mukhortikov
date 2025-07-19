@@ -1,0 +1,112 @@
+.ProjectsList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    justify-content: center;
+    
+
+    &__item {
+        cursor: pointer;
+        filter: grayscale(80%);
+        width: 390px;
+        height: 300px;
+        background-color: var(--black-light);
+        margin-right: 30px;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: filter 0.5s;
+        margin-bottom: 30px;
+
+        &:hover {
+            filter: none;
+        }
+
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+
+
+        @media (width >=810px) {
+            &:nth-last-child(-n + 2) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (width < 810px) {
+            margin-right: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.Thumbnail {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+    flex-shrink: 0;
+
+    &__label {
+        color: white;
+    }
+
+    &__span {
+        color: var(--gray-light);
+    }
+
+    &__label,
+    &__span {
+        text-transform: uppercase;
+    }
+}
+
+.Extra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 12px 20px 14px 23px;
+    position: relative;
+
+    &::after {
+        content: url('/arrow.svg');
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        transform: translateY(-25%);
+    }
+}
+
+.GradientTitle {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: var(--orange-gradient);
+    margin-bottom: 27px;
+    text-transform: uppercase;
+
+    &::first-line {
+        color: transparent;
+    }
+
+    &__specialization {
+        color: transparent;
+    }
+}
+
+.Link {
+    display: block;
+    height: 100%;
+}
+
+.SliderWrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    /* если нужно */
+}
+
+.SliderTrack {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
