@@ -1,7 +1,10 @@
+@use 'app/styles/mixins/mixins.scss' as *;
+
 .Header {
     width: 100%;
     background-color: var(--black-secondary);
-    
+    padding: 0 20px;
+
     &__container {
         max-width: 810px;
         height: 82px;
@@ -9,9 +12,79 @@
         margin-right: auto;
         display: flex;
         align-items: center;
+
+        @include mediatablet {
+            max-width: 640px;
+            height: 60px;
+        }
     }
 
     &__logo {
+        display: flex;
+        flex-shrink: 0;
         margin-right: auto;
     }
+
+    &__mobileNav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+
+        @include mediaphone {
+            &_active {
+                display: flex;
+            }
+        }
+
+    }
+
+    @include mediatablet {
+        padding: 0 10px;
+    }
 }
+
+.Navigation {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        position: relative;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        color: var(--white-primary);
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            opacity: 0;
+            bottom: -9px;
+            left: 0;
+            width: 100%;
+            outline: 2px solid white;
+            transition: all 0.2s ease-in;
+        }
+    }
+}
+
+// .Logo {
+//     width: 40px;
+//     height: 40px;
+// }

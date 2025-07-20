@@ -1,0 +1,13 @@
+@use "../variables/media.scss" as *;
+
+@mixin mediatablet {
+    @media (width <= $tablet) {
+        @content;
+    }
+}
+
+@mixin mediaphone {
+    @media (width <= $phone) {
+        @content;
+    }
+}

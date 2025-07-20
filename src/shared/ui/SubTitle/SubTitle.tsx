@@ -11,7 +11,7 @@ interface ISubTitleProps {
 export const SubTitle = ({ className, children, fontSize }: ISubTitleProps) => {
 
   if (!fontSize) {
-    fontSize = EFontSize.MAIN;
+    fontSize = EFontSize.L;
   }
 
   return (

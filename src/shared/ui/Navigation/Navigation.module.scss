@@ -1,8 +1,14 @@
+@use 'app/styles/mixins/mixins.scss' as *;
+
 .Navigation {
     &__list {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mediaphone {
+            display: none;
+        }
     }
 
     &__item {
@@ -15,9 +21,126 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @include mediatablet {
+            margin-right: 40px;
+        }
     }
 
     &__link {
         color: var(--white-primary);
+        position: relative;
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            opacity: 0;
+            bottom: -9px;
+            left: 0;
+            width: 100%;
+            outline: 2px solid white;
+            transition: all 0.2s ease-in;
+        }
     }
+
+    @include mediatablet {
+        &__text {
+            font: var(--font-mini-light-bolder);
+        }
+    }
+}
+
+/* Nav Icon */
+.Burger__button {
+    --time: 0.1s;
+    --width: 30px;
+    --height: 20px;
+    --line-height: 1px;
+    --line-margin: 2;
+    --color: white;
+
+    height: var(--height);
+    width: var(--width);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    @media (max-width:1160px) {
+        --width: 60px;
+        --height: 50px;
+        --line-height: 2px;
+    }
+
+    @media (max-width:1060px) {
+        --width: 40px;
+        --height: 30px;
+        --line-height: 1px;
+    }
+
+    @media (max-width:1020px) {
+        --width: 30px;
+        --height: 20px;
+    }
+
+
+    @include mediaphone {
+        display: flex;
+    }
+}
+
+.Burger__icon {
+    position: relative;
+    width: var(--width);
+    height: var(--line-height);
+    background-color: var(--color);
+}
+
+.Burger__icon::before,
+.Burger__icon::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: 0;
+
+    width: var(--width);
+    height: var(--line-height);
+
+    background-color: var(--color);
+    transition: transform var(--time) ease-in,
+        top var(--time) linear var(--time);
+}
+
+.Burger__icon::before {
+    top: calc(var(--line-height) * -8);
+}
+
+.Burger__icon::after {
+    top: calc(var(--line-height) * 8);
+}
+
+.Burger__icon.Burger__active {
+    background-color: transparent;
+}
+
+.Burger__icon.Burger__active::before,
+.Burger__icon.Burger__active::after {
+    top: 0;
+    transition: top var(--time) linear,
+        transform var(--time) ease-in var(--time);
+}
+
+.Burger__icon.Burger__active::before {
+    transform: rotate(45deg);
+}
+
+.Burger__icon.Burger__active::after {
+    transform: rotate(-45deg);
 }

@@ -1,0 +1,9 @@
+.Messenger {
+    display: flex;
+    align-items: center;
+
+    &__image {
+        align-self: flex-end;
+        margin-right: 5px;
+    }
+}

@@ -11,7 +11,7 @@ interface ITextProps {
 export const Text = ({ className, children, fontSize }: ITextProps) => {
 
   if (!fontSize) {
-    fontSize = EFontSize.MAIN;
+    fontSize = EFontSize.L;
   }
 
   return (

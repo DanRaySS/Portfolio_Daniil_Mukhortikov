@@ -1,0 +1,61 @@
+@use 'app/styles/mixins/mixins.scss' as *;
+
+.ExperienceList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    &__item {
+        cursor: pointer;
+        filter: grayscale(80%);
+        width: 390px;
+        height: 300px;
+        background-color: var(--black-light);
+        margin-right: 30px;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: filter 0.5s;
+        margin-bottom: 30px;
+
+        &:hover {
+            filter: none;
+        }
+
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+
+        @include mediatablet {
+            margin-right: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:nth-last-child(-n + 2) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.GradientTitle {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: var(--blue-gradient);
+    margin-bottom: 27px;
+    text-transform: uppercase;
+
+    &::first-line {
+        color: transparent;
+    }
+
+    &__specialization {
+        color: transparent;
+    }
+}

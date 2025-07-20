@@ -1,9 +1,10 @@
+@use 'app/styles/mixins/mixins.scss' as *;
+
 .ProjectsList {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
     justify-content: center;
-    
+
 
     &__item {
         cursor: pointer;
@@ -26,14 +27,16 @@
         }
 
 
-        @media (width >=810px) {
-            &:nth-last-child(-n + 2) {
-                margin-bottom: 0;
-            }
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
         }
 
-        @media (width < 810px) {
+        @include mediatablet {
             margin-right: 0;
+
+            &:nth-last-child(-n + 2) {
+                margin-bottom: 30px;
+            }
 
             &:last-child {
                 margin-bottom: 0;

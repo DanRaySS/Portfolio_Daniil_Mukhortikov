@@ -93,7 +93,7 @@ export const Projects = ({ className }: IProjectsProps) => {
                         <img className={cls.Thumbnail} src="/constructor_renderer.png" alt="Превью сервиса" />
                         <div className={cls.Extra}>
                             <Text className={cls.Thumbnail__span} fontSize={EFontSize.SMALL}>Ссылка на GitHub</Text>
-                            <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Клиентский конструктор</Label>
+                            <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Конструктор для навигации</Label>
                         </div>
                     </a>
                 </li>
@@ -102,7 +102,7 @@ export const Projects = ({ className }: IProjectsProps) => {
                         <img className={cls.Thumbnail} src="/premium_zirconia.png" alt="Превью вёрстки" />
                         <div className={cls.Extra}>
                             <Text className={cls.Thumbnail__span} fontSize={EFontSize.SMALL}>Ссылка на GitHub</Text>
-                            <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Фриланс вёрстка сайта</Label>
+                            <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Фриланс, вёрстка сайта</Label>
                         </div>
                     </a>
                 </li>

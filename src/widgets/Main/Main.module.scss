@@ -1,3 +1,5 @@
+@use 'app/styles/mixins/mixins.scss' as *;
+
 .GradientTitle {
     background-clip: text;
     -webkit-background-clip: text;
@@ -24,7 +26,7 @@
 }
 
 .Experience {
-    letter-spacing: 12%;
+    letter-spacing: 2px;
     color: var(--gray-light);
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -32,9 +34,17 @@
 
 .Stack {
     margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    justify-content: center;
 
     &__item {
-        display: flex;
+        margin-right: 60px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
 }
 
@@ -42,14 +52,62 @@
     filter: grayscale(100%);
     width: 42px;
     height: 42px;
-    margin-right: 60px;
     transition: filter 0.5s;
-    
-    &:last-of-type {
-        margin-right: 0;
-    }
 
     &:hover {
         filter: none;
+    }
+}
+
+.Projects {
+    margin-bottom: 100px;
+}
+
+@include mediatablet {
+    .Main {
+        &__title {
+            font: var(--font-bold);
+        }
+    }
+
+    .Projects {
+        margin-bottom: 40px;
+    }
+
+    .Experience {
+        // font: var(--font-label);
+        margin-bottom: 40px;
+    }
+
+    .Buttons {
+        margin-bottom: 45px;
+
+        &__item {
+            max-width: 200px;
+            height: 50px;
+        }
+
+        &__text {
+            font-size: medium;
+        }
+    }
+
+    .Stack {
+        margin-bottom: 60px;
+        // flex: 0 0 calc(25% -  42px * 3);
+        column-gap: 30px;
+        row-gap: 20px;
+
+        &__item {
+            margin-right: 0px;
+        }
+    }
+
+    .SubTitle {
+        margin-bottom: 20px;
+    }
+
+    .GradientTitle {
+        margin-bottom: 15px;
     }
 }

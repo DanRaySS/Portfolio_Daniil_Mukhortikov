@@ -11,16 +11,22 @@ body {
 }
 
 .content-page {
-  display: flex; 
-  justify-content: center; 
-  flex-direction: column; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background: var(--black-primary);
   overflow: hidden;
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */ /* Safari */ /* Konqueror HTML */ /* Firefox */ /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  /* Safari */
+  /* Konqueror HTML */
+  /* Firefox */
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }

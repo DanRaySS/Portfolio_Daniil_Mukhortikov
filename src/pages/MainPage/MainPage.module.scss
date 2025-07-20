@@ -1,3 +1,5 @@
+@use "app/styles/mixins/mixins" as *;
+
 .MainPage {
     background-color: var(--black-primary);
 }
@@ -18,4 +20,18 @@
     // margin-right: auto;
     // margin-left: auto;
     max-width: 810px;
+}
+
+@include mediatablet {
+    .Header {
+        margin-bottom: 40px;
+    }
+
+    .Avatar {
+        margin-bottom: 16px;
+    }
+
+    .Container {
+        max-width: 520px;
+    }
 }

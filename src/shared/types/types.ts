@@ -1,8 +1,12 @@
 export enum EFontSize {
-  SEMIBOLD = "SemiBold",
-  L = "L",
-  LABEL = "Label",
+  SMALL = "Small",
+  MINILIGHT = "MiniLight",
+  MINILIGHTBOLDER = "MiniLightBolder",
   LIGHT = "Light",
+  MAIN = "Main",
+  LABEL = "Label",
+  SEMIBOLD = "SemiBold",
+  BOLD = "Bold",
+  L = "L",
   EXTRA = "Extra",
-  SMALL = "Small"
 }

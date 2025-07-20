@@ -1,0 +1,65 @@
+@use 'app/styles/mixins/mixins.scss' as *;
+
+.Footer {
+    width: 100%;
+    background-color: var(--black-lighter);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 82px 20px 100px 20px;
+        max-width: 810px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: flex-start;
+
+        @include mediaphone {
+            padding: 60px 10px 80px 10px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 34px;
+    }
+
+    &__span {
+        color: var(--gray-light);
+        margin-bottom: 22px;
+    }
+}
+
+.CommunicationList {
+    margin-bottom: 40px;
+}
+
+.SocialList {
+    display: flex;
+
+    &__link {
+        display: block;
+    }
+
+    &__item {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__image {
+        filter: grayscale(100%);
+        width: 34px;
+        height: 34px;
+        transition: filter 0.5s;
+
+        &:hover {
+            filter: none;
+        }
+    }
+}
+
+.Email {
+    margin-bottom: 2px;
+}
