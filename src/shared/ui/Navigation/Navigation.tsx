@@ -5,7 +5,7 @@ import cls from "./Navigation.module.scss";
 
 interface INavigationProps {
   className?: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // eslint-disable-next-line
   onBurgerClicked: (e: any) => void;
   isBurgerActive: boolean;
 }

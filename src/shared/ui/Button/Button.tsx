@@ -6,6 +6,7 @@ interface IButtonProps {
     variant: 'fill' | 'outline';
     children: React.ReactNode;
     style?: React.CSSProperties;
+    // eslint-disable-next-line 
     onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 

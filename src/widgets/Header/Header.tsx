@@ -11,9 +11,8 @@ interface IHeaderProps {
 
 export const Header = ({ className }: IHeaderProps) => {
   const [isBurgerActive, setIsBurgerActive] = useState(false);
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const onBurgerClicked = useCallback((e: any) => {
+   
+  const onBurgerClicked = useCallback(() => {
     setIsBurgerActive(!isBurgerActive);
   }, [isBurgerActive, setIsBurgerActive]);
 
