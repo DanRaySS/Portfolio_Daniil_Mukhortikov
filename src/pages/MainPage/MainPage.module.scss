@@ -35,3 +35,17 @@
         max-width: 520px;
     }
 }
+
+@include mediaphone {
+    .Header {
+        margin-bottom: 30px;
+    }
+
+    .Avatar {
+        margin-bottom: 12px;
+    }
+
+    .Container {
+        max-width: 300px;
+    }
+}

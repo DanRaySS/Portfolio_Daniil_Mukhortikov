@@ -33,7 +33,7 @@ export const Main = ({ className }: IMainProps) => {
                 </a>
                 <a href="https://disk.yandex.ru/i/aNeQyQwDBNjsMw" target="_blank" rel="noopener noreferrer" style={{display: 'block'}}>
                     <Button variant="outline" className={cls.Buttons__item}>
-                        <Text fontSize={EFontSize.SEMIBOLD} className={cls.Buttons__text}>Скачать резюме</Text>
+                        <Text fontSize={EFontSize.SEMIBOLD} className={cls.Buttons__text}>Скачать&nbsp;резюме</Text>
                     </Button>
                 </a>
             </div>

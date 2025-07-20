@@ -111,3 +111,56 @@
         margin-bottom: 15px;
     }
 }
+
+@include mediaphone {
+    .Main {
+        &__title {
+            margin-top: 6px;
+            font: var(--font-label);
+            line-height: 24px;
+        }
+    }
+
+    .SubTitle {
+        font: var(--font-mini-light);
+        margin-bottom: 18px;
+    }
+
+    .GradientTitle {
+        margin-bottom: 10px;
+    }
+
+    .Buttons {
+        margin-bottom: 32px;
+
+        &__item {
+            max-width: 150px;
+            height: 48px;
+        }
+
+        &__text {
+            font-size: smaller;
+            font-weight: 500;
+        }
+    }
+
+    .Projects {
+        margin-bottom: 28px;
+    }
+
+    .Experience {
+        font: var(--font-main);
+        margin-bottom: 20px;
+    }
+
+    .Stack {
+        margin-bottom: 36px;
+        column-gap: 26px;
+        row-gap: 18px;
+    }
+
+    .Icon {
+        width: 38px;
+        height: 38px;
+    }
+}

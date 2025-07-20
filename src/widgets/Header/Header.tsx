@@ -33,21 +33,21 @@ export const Header = ({ className }: IHeaderProps) => {
           ? cls['Header__mobileNav_active']
           : undefined)}
       >
-        <ul className={cls.Navigation__list} role="list">
-          <li className={cls.Navigation__item}>
-            <a className={cls.Navigation__link} href="#home">
-              <SubTitle fontSize={EFontSize.MINILIGHTBOLDER} className={cls.Navigation__text}>Главная</SubTitle>
+        <ul className={cls.NavigationMobile__list} role="list">
+          <li className={cls.NavigationMobile__item}>
+            <a className={cls.NavigationMobile__link} href="#home">
+              <SubTitle fontSize={EFontSize.MINILIGHTBOLDER} className={cls.NavigationMobile__text}>Главная</SubTitle>
             </a>
           </li>
-          <li className={cls.Navigation__item}>
-            <a className={cls.Navigation__link} href="#projects">
-              <SubTitle fontSize={EFontSize.MINILIGHTBOLDER} className={cls.Navigation__text}>Проекты</SubTitle>
+          <li className={cls.NavigationMobile__item}>
+            <a className={cls.NavigationMobile__link} href="#projects">
+              <SubTitle fontSize={EFontSize.MINILIGHTBOLDER} className={cls.NavigationMobile__text}>Проекты</SubTitle>
             </a>
           </li>
-          {/* <li className={cls.Navigation__item}><a className={cls.Navigation__link} href="#experience">Опыт</a></li> */}
-          <li className={cls.Navigation__item}>
-            <a className={cls.Navigation__link} href="#contacts">
-              <SubTitle fontSize={EFontSize.MINILIGHTBOLDER} className={cls.Navigation__text}>Контакты</SubTitle>
+          {/* <li className={cls.NavigationMobile__item}><a className={cls.NavigationMobile__link} href="#experience">Опыт</a></li> */}
+          <li className={cls.NavigationMobile__item}>
+            <a className={cls.NavigationMobile__link} href="#contacts">
+              <SubTitle fontSize={EFontSize.MINILIGHTBOLDER} className={cls.NavigationMobile__text}>Контакты</SubTitle>
             </a>
           </li>
         </ul>

@@ -14,11 +14,20 @@
 
         @include mediatablet {
             transform: scale(1.8) translateY(28px);
+
+        }
+        @include mediaphone {
+            transform: scale(1.8) translateY(22px);
         }
     }
 
     @include mediatablet {
         width: 150px;
         height: 150px;
+    }
+
+    @include mediaphone {
+        max-width: 120px;
+        height: 120px;
     }
 }

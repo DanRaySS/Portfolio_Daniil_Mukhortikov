@@ -14,23 +14,56 @@
         display: flex;
         align-items: flex-start;
 
+        @include mediatablet {
+            max-width: 520px;
+            padding: 60px 14px 80px 14px;
+        }
+
         @include mediaphone {
-            padding: 60px 10px 80px 10px;
+            max-width: 300px;
+            padding: 30px 10px 30px 10px;
         }
     }
 
     &__title {
         margin-bottom: 34px;
+
+        @include mediatablet {
+            font: var(--font-semiBold);
+            margin-bottom: 22px;
+        }
+
+        @include mediaphone {
+            font: var(--font-label);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
     }
 
     &__span {
         color: var(--gray-light);
         margin-bottom: 22px;
+
+        @include mediatablet {
+            margin-bottom: 18px;
+        }
+
+        @include mediaphone {
+            margin-bottom: 12px;
+        }
     }
 }
 
 .CommunicationList {
     margin-bottom: 40px;
+
+    @include mediatablet {
+        margin-bottom: 30px;
+    }
+
+    @include mediaphone {
+        margin-bottom: 20px;
+    }
 }
 
 .SocialList {
@@ -46,6 +79,14 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @include mediatablet {
+            margin-right: 23px;
+        }
+
+        @include mediaphone {
+            margin-right: 20px;
+        }
     }
 
     &__image {
@@ -56,6 +97,16 @@
 
         &:hover {
             filter: none;
+        }
+
+        @include mediatablet {
+            width: 32px;
+            height: 32px;
+        }
+
+        @include mediaphone {
+            width: 30px;
+            height: 30px;
         }
     }
 }
