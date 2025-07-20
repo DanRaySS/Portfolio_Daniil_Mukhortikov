@@ -103,7 +103,7 @@
         content: url('/arrow.svg');
         position: absolute;
         right: 0;
-        bottom: 0px;
+        bottom: 0;
         transform: translateY(-25%);
 
         @include mediaphone {
@@ -118,7 +118,6 @@
 
 .GradientTitle {
     background-clip: text;
-    -webkit-background-clip: text;
     background-image: var(--orange-gradient);
     margin-bottom: 27px;
     text-transform: uppercase;

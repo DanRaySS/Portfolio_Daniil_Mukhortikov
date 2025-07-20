@@ -1,7 +1,7 @@
 /* Reset and base styles  */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     border: none;
 }
 
@@ -72,6 +72,7 @@ button,
 select {
     font-family: inherit;
     font-size: inherit;
+
     // color: inherit;
     background-color: transparent;
 }
@@ -85,7 +86,6 @@ input[type="submit"] {
     display: inline-block;
     box-shadow: none;
     background-color: transparent;
-    background: none;
     cursor: pointer;
 }
 

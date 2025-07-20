@@ -2,7 +2,6 @@
 
 .GradientTitle {
     background-clip: text;
-    -webkit-background-clip: text;
     background-image: var(--orange-purple-gradient-1);
     margin-bottom: 40px;
 
@@ -94,12 +93,12 @@
 
     .Stack {
         margin-bottom: 60px;
+
         // flex: 0 0 calc(25% -  42px * 3);
-        column-gap: 30px;
-        row-gap: 20px;
+        gap: 20px 30px;
 
         &__item {
-            margin-right: 0px;
+            margin-right: 0;
         }
     }
 
@@ -155,8 +154,7 @@
 
     .Stack {
         margin-bottom: 36px;
-        column-gap: 26px;
-        row-gap: 18px;
+        gap: 18px 26px;
     }
 
     .Icon {

@@ -42,25 +42,25 @@ export const Main = ({ className }: IMainProps) => {
             </SubTitle>
             <ul role="list" className={cls.Stack}>
                 <li className={cls.Stack__item}>
-                    <img className={cls.Icon} src="/html5.svg" alt="HTML" title="HTML" />
+                    <img className={cls.Icon} src="/html5.svg" alt="Иконка HTML" title="HTML" />
                 </li>
                 <li className={cls.Stack__item}>
-                    <img className={cls.Icon} src="/css3.svg" alt="CSS" title="CSS" />
+                    <img className={cls.Icon} src="/css3.svg" alt="Иконка CSS" title="CSS" />
                 </li>
                 <li className={cls.Stack__item}>
-                    <img className={cls.Icon} src="/js.svg" alt="JavaScript" title="JavaScript" />
+                    <img className={cls.Icon} src="/js.svg" alt="Иконка JavaScript" title="JavaScript" />
                 </li>
                 <li className={cls.Stack__item}>
-                    <img className={cls.Icon} src="/typescript.svg" alt="TypeScript" title="TypeScript" />
+                    <img className={cls.Icon} src="/typescript.svg" alt="Иконка TypeScript" title="TypeScript" />
                 </li>
                 <li className={cls.Stack__item}>
-                    <img className={cls.Icon} src="/react.svg" alt="React" title="React" />
+                    <img className={cls.Icon} src="/react.svg" alt="Иконка React" title="React" />
                 </li>
                 <li className={cls.Stack__item}>
-                    <img className={cls.Icon} src="/nestjs.svg" alt="NestJS" title="NestJS" />
+                    <img className={cls.Icon} src="/nestjs.svg" alt="Иконка NestJS" title="NestJS" />
                 </li>
                 <li className={cls.Stack__item}>
-                    <img className={cls.Icon} src="/flutter.svg" alt="Flutter" title="Flutter" />
+                    <img className={cls.Icon} src="/flutter.svg" alt="Иконка Flutter" title="Flutter" />
                 </li>
             </ul>
             <Projects className={cls.Projects} />

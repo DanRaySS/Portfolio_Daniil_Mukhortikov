@@ -10,7 +10,7 @@
     "lint:ts:fix": "eslint . --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
-    "preview": "vite preview --mode production",
+    "preview": "vite preview --mode production"
   },
   "dependencies": {
     "classnames": "^2.5.1",

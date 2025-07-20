@@ -18,7 +18,7 @@ export const Footer = ({ className }: IFooterProps) => {
           Контакты
         </SubTitle>
         <Text fontSize={EFontSize.MINILIGHT} className={cls.Footer__span}>
-          Fullstack‑разработчик с 4-летним опытом в создании надёжных и масштабируемых веб‑и мобильных приложений. Уверенно работаю как с фронтендом (React, TypeScript), так и с бэкендом (Node.js, NestJS, PostgreSQL), а также развиваюсь в мобильной разработке на Flutter.
+          Fullstack‑разработчик с 4-летним&nbsp;опытом в&nbsp;создании надёжных и масштабируемых веб и мобильных приложений. Уверенно работаю как с фронтендом (React,&nbsp;TypeScript), так и с бэкендом (Node.js,&nbsp;NestJS, PostgreSQL), а также развиваюсь в мобильной разработке на&nbsp;Flutter.
         </Text>
         <ul role="list" className={cls.CommunicationList}>
           <li><Email className={cls.Email} /></li>
@@ -32,7 +32,7 @@ export const Footer = ({ className }: IFooterProps) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className={cls.SocialList__image} src="/github_white.svg" alt="GitHub" />
+              <img className={cls.SocialList__image} src="/github_white.svg" alt="Иконка GitHub" />
             </a>
           </li>
           <li className={cls.SocialList__item}>
@@ -42,7 +42,7 @@ export const Footer = ({ className }: IFooterProps) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className={cls.SocialList__image} src="/rustore.svg" alt="RuStore" />
+              <img className={cls.SocialList__image} src="/rustore.svg" alt="Иконка RuStore" />
             </a>
           </li>
         </ul>

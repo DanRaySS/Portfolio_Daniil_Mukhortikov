@@ -81,7 +81,7 @@ export const Projects = ({ className }: IProjectsProps) => {
             <ul role="list" className={cls.ProjectsList}>
                 <li className={cls.ProjectsList__item} title='Вёрстка сайта "Euclid"'>
                     <a className={cls.Link} href="https://github.com/DanRaySS/Euclid" target="_blank" rel="noopener noreferrer">
-                        <img className={cls.Thumbnail} src="/euclid.png" alt="Превью вёрстки" />
+                        <img className={cls.Thumbnail} src="/euclid.png" alt="Превью вёрстки сайта Euclid" />
                         <div className={cls.Extra}>
                             <Text className={cls.Thumbnail__span} fontSize={EFontSize.SMALL}>Ссылка на GitHub</Text>
                             <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Вёрстка сайта Euclid</Label>
@@ -90,7 +90,7 @@ export const Projects = ({ className }: IProjectsProps) => {
                 </li>
                 <li className={cls.ProjectsList__item} title='Клиентская часть сервиса "Конструктор карт в indoor-навигации"'>
                     <a className={cls.Link} href="https://github.com/Eternal-Encoders/Constructor_Renderer" target="_blank" rel="noopener noreferrer">
-                        <img className={cls.Thumbnail} src="/constructor_renderer.png" alt="Превью сервиса" />
+                        <img className={cls.Thumbnail} src="/constructor_renderer.png" alt="Превью клиентской части сервиса 'Конструктор карт в indoor-навигации'" />
                         <div className={cls.Extra}>
                             <Text className={cls.Thumbnail__span} fontSize={EFontSize.SMALL}>Ссылка на GitHub</Text>
                             <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Конструктор для навигации</Label>
@@ -99,7 +99,7 @@ export const Projects = ({ className }: IProjectsProps) => {
                 </li>
                 <li className={cls.ProjectsList__item} title='Фриланс вёрстка сайта "Знак качества Premium Zirconia"'>
                     <a className={cls.Link} href="https://github.com/DanRaySS/Premium_Zirconia" target="_blank" rel="noopener noreferrer">
-                        <img className={cls.Thumbnail} src="/premium_zirconia.png" alt="Превью вёрстки" />
+                        <img className={cls.Thumbnail} src="/premium_zirconia.png" alt="Превью фриланс-вёрстки сайта 'Знак качества Premium Zirconia'" />
                         <div className={cls.Extra}>
                             <Text className={cls.Thumbnail__span} fontSize={EFontSize.SMALL}>Ссылка на GitHub</Text>
                             <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Фриланс, вёрстка сайта</Label>
@@ -130,7 +130,7 @@ export const Projects = ({ className }: IProjectsProps) => {
                                         key={idx}
                                         className={cls.Thumbnail}
                                         src={src}
-                                        alt={`Превью сервиса ${idx}`}
+                                        alt={`Превью сервиса "Aikido" для голосований внутри организации`}
                                     />
                                 ))}
                             </div>
@@ -143,7 +143,7 @@ export const Projects = ({ className }: IProjectsProps) => {
                 </li>
                 <li className={cls.ProjectsList__item} title='Мобильное приложение "УрФУ Навигатор"'>
                     <a className={cls.Link} href="https://github.com/Eternal-Encoders/UrfuNavigator-mobile" target="_blank" rel="noopener noreferrer">
-                        <img className={cls.Thumbnail} src="/urfu_navigator_mobile.png" alt="Лого" />
+                        <img className={cls.Thumbnail} src="/urfu_navigator_mobile.png" alt="Лого мобильного приложения 'УрФУ Навигатор'" />
                         <div className={cls.Extra}>
                             <Text className={cls.Thumbnail__span} fontSize={EFontSize.SMALL}>Ссылка на GitHub</Text>
                             <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Моб. прил. "УрФУ Навигатор"</Label>
@@ -152,7 +152,7 @@ export const Projects = ({ className }: IProjectsProps) => {
                 </li>
                 <li className={cls.ProjectsList__item} title='Серверная часть сервиса по отправке уведомлений'>
                     <a className={cls.Link} href="https://github.com/DanRaySS/Notification-Service" target="_blank" rel="noopener noreferrer">
-                        <img className={cls.Thumbnail} src="/notification.png" alt="Превью " />
+                        <img className={cls.Thumbnail} src="/notification.png" alt="Превью серверной части сервиса по отправке уведомлений" />
                         <div className={cls.Extra}>
                             <Text className={cls.Thumbnail__span} fontSize={EFontSize.SMALL}>Ссылка на GitHub</Text>
                             <Label className={cls.Thumbnail__label} fontSize={EFontSize.LABEL}>Сервис отправки уведомле...</Label>

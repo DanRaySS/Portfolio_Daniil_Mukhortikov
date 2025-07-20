@@ -21,10 +21,10 @@
     --font-bold: var(--font-weight-bold) var(--font-size-bold) / var(--font-line-bold) var(--font-family-main);
 
     // Размер шрифта SemiBold
-    --font-size-semiBold: 21px;
-    --font-line-semiBold: 32px;
-    --font-weight-semiBold: 600;
-    --font-semiBold: var(--font-weight-semiBold) var(--font-size-semiBold) / var(--font-line-semiBold) var(--font-family-main);
+    --font-size-semi-bold: 21px;
+    --font-line-semi-bold: 32px;
+    --font-weight-semi-bold: 600;
+    --font-semi-bold: var(--font-weight-semi-bold) var(--font-size-semi-bold) / var(--font-line-semi-bold) var(--font-family-main);
 
     // Размер шрифта Label
     --font-size-label: 19px;
@@ -65,10 +65,10 @@
     // Цвет
     --white-primary: #fff;
     --black-primary: #161513;
-    --black-secondary: #222222;
+    --black-secondary: #222;
     --black-lighter: #191919;
     --black-light: #2A2A2A;
-    --black-opacity: rgba(0, 0, 0, 20);
+    --black-opacity: rgb(0 0 0 / 2000%);
     --gray-light: #C5C5C5;
     --gray-dark: #8491A0;
     --blue: #1976D2;
@@ -80,5 +80,5 @@
     --orange-gradient: linear-gradient(#FF8660 0%, #D5491D 100%);
     --orange-purple-gradient-1: linear-gradient(to right, #FF8660 0%, #9A33FF 100%);
     --orange-purple-gradient-2: linear-gradient(#FF8660 0%, #8000FF 100%);
-    --white-gradient: linear-gradient(#FDFDFD 0%, rgba(255, 255, 255, 18) 100%);
+    --white-gradient: linear-gradient(#FDFDFD 0%, rgb(255 255 255 / 1800%) 100%);
 }
